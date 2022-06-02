@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="152.278">
+    <testcase classname="Unknown" name="user open Ecommerce website and navigate to register page" time="24.014">
+        <system-out><![CDATA[And click register button...................................................passed
+When user enter valid data..................................................passed
+And user click register button..............................................passed
+Then user could register successfully.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user open Ecommerce website and navigate to register page" time="10.808">
+        <system-out><![CDATA[And click login.............................................................passed
+When user enter valid Email and password....................................passed
+And user click login button.................................................passed
+Then user could login successfully..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user search for product" time="11.765">
+        <system-out><![CDATA[When user enter product name in search box..................................passed
+And Click search............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user can switch the currency" time="8.872">
+        <system-out><![CDATA[When user select currency from the dropdown list............................passed
+Then currency switched successfully.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user select category to show its product" time="8.764">
+        <system-out><![CDATA[When user select category and click.........................................passed
+Then user can view category's products......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user add products to his shopping cart" time="9.391">
+        <system-out><![CDATA[When user select product and click add to cart..............................passed
+And determine the quantity of products and click add to cart................passed
+Then product added to cart successfully.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user add products to his wishlist" time="7.213">
+        <system-out><![CDATA[When user click add to wishlist.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user add two products or more to his wish list so that he can compare the difference" time="12.773">
+        <system-out><![CDATA[When user add the products to compare list..................................passed
+And click on compare production list........................................passed
+Then user can compare between the selected products.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user create successful order" time="23.072">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[6]/div[3]/div/div/div/div[2]/ol/li[1]/div[2]/form/div/div/div[2]/div/div/div[5]/select&quot;}&#10;  (Session info: chrome=102.0.5005.63)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-L1RJ536', ip: '192.168.1.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a79cdf3c17d38a391370bd83c76b63ca, findElement {using=xpath, value=/html/body/div[6]/div[3]/div/div/div/div[2]/ol/li[1]/div[2]/form/div/div/div[2]/div/div/div[5]/select}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\khalifa\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56191/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a79cdf3c17d38a391370bd83c76b63ca" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When user login with valid username and password............................passed
+And user select product and add it to cart and confirm adding...............passed
+And user click on shopping cart button......................................passed
+And user agree the terms and click on checkout button.......................passed
+And user enter shipping Address.............................................failed
+And user enter shipping method..............................................skipped
+And user enter payment method...............................................skipped
+And user enter payment Information..........................................skipped
+And user confirm his order..................................................skipped
+Then the order made successfully............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[3]/div/div/div/div[2]/ol/li[1]/div[2]/form/div/div/div[2]/div/div/div[5]/select"}
+  (Session info: chrome=102.0.5005.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-L1RJ536', ip: '192.168.1.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a79cdf3c17d38a391370bd83c76b63ca, findElement {using=xpath, value=/html/body/div[6]/div[3]/div/div/div/div[2]/ol/li[1]/div[2]/form/div/div/div[2]/div/div/div[5]/select}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\khalifa\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56191/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a79cdf3c17d38a391370bd83c76b63ca
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.example.PagesElements.makeOrder.shippingAddress(makeOrder.java:63)
+	at org.example.StepDefinitions.Order.enterShippingAddress(Order.java:33)
+	at ✽.user enter shipping Address(file:///F:/E-commerceApp/src/main/resources/Features/TC09_CreateOrder.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Unknown" name="user follow the facebook page" time="8.897">
+        <system-out><![CDATA[When user click on facebook icon redirect to website's facebook page........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user follow the Twitter page" time="8.738">
+        <system-out><![CDATA[When user click on Twitter icon redirect to website's twitter page..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user follow the RSS page" time="8.986">
+        <system-out><![CDATA[When user click on rss icon redirect to website's rss page..................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="user follow the Youtube page" time="8.695">
+        <system-out><![CDATA[When user click on youtube icon redirect to website's youtube channel.......passed
+]]></system-out>
+    </testcase>
+</testsuite>
